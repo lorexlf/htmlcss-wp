@@ -20,13 +20,6 @@ body {
   margin: 20px auto;
 }
 
-
-/*Preset per i div bianchi*/
-/* div:not(.container):not(.top-header):not(.header-title):not(.top-footer):not(.bottom-footer), footer {
-  background-color: #fff;
-  border-radius: 8px;
-} */
-
 .box-white {
   background-color: #fff;
   border-radius: 8px;
@@ -133,6 +126,13 @@ aside {
   width: 20%;
 }
 
+
+/*
+Non ho capito se dallo screenshot i padding delle due sidebar sono stati
+impostati diversi per farci applicare regole diverse
+o se potevamo farli tutti uguali, nel dubbio ho codificato il più simile possibile
+*/
+
 /* Aside sinistra ------------------------- */
 
 .sidebar-sx div {
@@ -148,13 +148,13 @@ aside {
 }
 
 .sidebar-sx h2:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 800;
-  content: "\f143";
-  color: #f6a600;
-  margin-right: 10px;
-  font-size: 36px;
   height: 80px;
+  margin-right: 10px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f143";
+  font-size: 36px;
+  font-weight: 800;
+  color: #f6a600;
   float: left;
   display: inline-block;
 }
@@ -164,9 +164,9 @@ aside {
 }
 
 .sidebar-sx ul li {
+  margin-bottom: 20px;
   list-style-type: none;
   color: green;
-  margin-bottom: 20px;
 }
 
 .sidebar-sx  ul li:last-child {
@@ -182,9 +182,9 @@ aside {
 
 .sidebar-dx h2 {
   margin-bottom: 40px;
-  color: #504741;
   font-size: 28px;
   font-weight: 400;
+  color: #504741;
 }
 
 .sidebar-dx p, article p {
@@ -194,20 +194,20 @@ aside {
 /* Contenuto centrale ------------------------- */
 
 .article {
+  width: calc(60% - 120px);
   padding: 24px;
+  margin: 0 60px;
   border-radius: 3px;
   float: left;
-  width: calc(60% - 120px);
-  margin: 0 60px;
 }
 
 article h1 {
   margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 400;
   color: #504741;
   text-transform: uppercase;
   text-shadow: 2px 2px rgba(0,0,0,.2);
-  font-size: 28px;
-  font-weight: 400;
 }
 
 /* Footer ------------------------- */
